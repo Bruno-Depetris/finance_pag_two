@@ -1,0 +1,257 @@
+body{
+    background-color: rgb(31, 31, 31);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+/*hago desaparecer barra y pero sin afectar el funcionamiento de tal*/
+::-webkit-scrollbar {
+    display: none;
+}
+.money {
+    width: 100%;
+    height: 1200px;
+    position: absolute;
+    top: -200px;
+    left: 0;
+    opacity: 60%;
+}
+.money i {
+    display: inline-block;
+    -webkit-animation: money 3s linear 2s 20;
+    animation: money 3s linear 2s 20;
+    position: relative;
+    background-image: url('data:image/svg+xml,%3Csvg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"%3E%3Cg%3E%3Cg%3E%3Cpath style="fill:%2374D24F;" d="M496,112H16c-8.82,0-16,7.18-16,16v256c0,8.82,7.18,16,16,16h480c8.82,0,16-7.18,16-16V128 C512,119.18,504.82,112,496,112z"/%3E%3C/g%3E%3Cg%3E%3Cpath style="fill:%23FFEFBC;" d="M472,192c-22.055,0-40-17.945-40-40c0-4.422-3.578-8-8-8H88c-4.422,0-8,3.578-8,8 c0,22.055-17.945,40-40,40c-4.422,0-8,3.578-8,8v112c0,4.422,3.578,8,8,8c22.055,0,40,17.945,40,40c0,4.422,3.578,8,8,8h336 c4.422,0,8-3.578,8-8c0-22.055,17.945-40,40-40c4.422,0,8-3.578,8-8V200C480,195.578,476.422,192,472,192z"/%3E%3C/g%3E%3Cg%3E%3Cpath style="fill:%23869B55;" d="M128,256c0,48.221,26.691,90.175,66.081,112h123.839C357.309,346.175,384,304.221,384,256 s-26.691-90.175-66.081-112H194.08C154.691,165.825,128,207.779,128,256z"/%3E%3C/g%3E%3Cg%3E%3Cpath style="fill:%23FFEFBC;" d="M256,244c-16.023,0-28-8.445-28-16c0-7.555,11.977-16,28-16s28,8.445,28,16c0,6.625,5.375,12,12,12 s12-5.375,12-12c0-19.236-16.824-34.862-40-38.932V184c0-6.625-5.375-12-12-12s-12,5.375-12,12v5.068 c-23.176,4.07-40,19.695-40,38.932c0,22.43,22.844,40,52,40c16.023,0,28,8.445,28,16c0,7.555-11.977,16-28,16s-28-8.445-28-16 c0-6.625-5.375-12-12-12s-12,5.375-12,12c0,19.236,16.824,34.862,40,38.932V328c0,6.625,5.375,12,12,12s12-5.375,12-12v-5.068 c23.176-4.07,40-19.695,40-38.932C308,261.57,285.156,244,256,244z"/%3E%3C/g%3E%3Cg%3E%3Ccircle style="fill:%2374D24F;" cx="80" cy="256" r="24"/%3E%3C/g%3E%3Cg%3E%3Ccircle style="fill:%2374D24F;" cx="432" cy="256" r="24"/%3E%3C/g%3E%3Cg%3E%3Ccircle style="fill:%23869B55;" cx="40" cy="152" r="16"/%3E%3C/g%3E%3Cg%3E%3Ccircle style="fill:%23869B55;" cx="472" cy="152" r="16"/%3E%3C/g%3E%3Cg%3E%3Ccircle style="fill:%23869B55;" cx="40" cy="360" r="16"/%3E%3C/g%3E%3Cg%3E%3Ccircle style="fill:%23869B55;" cx="472" cy="360" r="16"/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A');
+} 
+@-webkit-keyframes money {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(0deg) scale(0.6);
+      transform: translate3d(0, 0, 0) rotate(0deg) scale(0.6);
+    }
+    100% {
+      -webkit-transform: translate3d(15px, 600px, 0px) rotate(360deg) scale(0.6);
+      transform: translate3d(15px, 600px, 0px) rotate(360deg) scale(0.6);
+    }
+} 
+@keyframes money {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(0deg) scale(0.6);
+      transform: translate3d(0, 0, 0) rotate(0deg) scale(0.6);
+    }
+    100% {
+      -webkit-transform: translate3d(15px, 1400px, 0px) rotate(360deg) scale(0.6);
+      transform: translate3d(15px, 1400px, 0px) rotate(360deg) scale(0.6);
+    }
+} 
+.money i:nth-child(3n) {
+    width: 40px;
+    height: 40px;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-iteration-count: 30;
+    animation-iteration-count: 30;
+    -webkit-transform-origin: right -45px;
+    transform-origin: right -45px;
+} 
+.money i:nth-child(3n + 1) {
+    width: 50px;
+    height: 50px;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+    -webkit-animation-iteration-count: 45;
+    animation-iteration-count: 45;
+    -webkit-transform-origin: right -30px;
+    transform-origin: right -30px;
+} 
+.money i:nth-child(3n + 2) {
+    width: 65px;
+    height: 65px;
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-iteration-count: 60;
+    animation-iteration-count: 60;
+    -webkit-transform-origin: right -15px;
+    transform-origin: right -15px;
+} 
+.money i:nth-child(7n) {
+    opacity: 0.3;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+.money i:nth-child(7n + 1) {
+    opacity: 0.4;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+.money i:nth-child(7n + 2) {
+    opacity: 0.5;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+.money i:nth-child(7n + 3) {
+    opacity: 0.6;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+.money i:nth-child(7n + 4) {
+    opacity: 0.7;
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+.money i:nth-child(7n + 5) {
+    opacity: 0.8;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+.money i:nth-child(7n + 6) {
+    opacity: 0.9;
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+.fondo_image_logo{
+    position: fixed;
+    z-index: -1;
+    top: 300px;
+    width: 30%;
+}
+.main_box{
+
+    flex-direction: column;
+    align-items: center;
+     display: flex;
+    width: 70%;
+    height: 100%;
+
+    backdrop-filter: blur(10px); 
+    box-shadow: 0px 3px 3px 2px rgba(255, 255, 255, 0.4);
+    
+    color: #0091E5;
+    letter-spacing: .2em;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    
+    margin-bottom: 0px; 
+}
+.main_box .presentation #crypto-widget-container {
+
+
+  
+}
+.main_box .presentation{
+    width: 95%;
+    height: 30%;
+    top: 20px;
+
+}
+.main_box .presentation h1{
+
+    color: #0091E5;
+
+    
+    letter-spacing: .6em;
+
+    text-shadow: 
+    2px 2px 2px #000000, 
+    1px 3px 0px rgba(0, 0, 0, 1);
+
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 150%;
+
+
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+}
+.main_box .who_are{
+        z-index: -1;
+        width: 95%;
+        height: 25%;
+
+}
+.main_box .who_are h4{
+    font-size: 200%;
+}
+.main_box .how_i_can{
+    z-index: -1;
+    width: 95%;
+    height: 30%;
+}
+.main_box .how_i_can h4{
+    font-size: 200%;
+}
+.main_box .how_i_can img{
+    width: 10%;
+    padding-left: 5%;
+    margin-right: 5%;
+        
+}
+.main_box .usted_prioridad{
+    width: 95%;
+    height: 20%;
+}
+.main_box .usted_prioridad h4{
+    font-size: 200%;
+}
+
+.contact{
+    
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(27, 27, 27, 0.644);
+    z-index: 1;
+    margin-top: 1px;
+    border-top: 1px solid white;
+    backdrop-filter: blur(10px);
+    box-shadow: 31px 33px 23px 21px rgba(255, 255, 255, 0.719);
+    font-size: 50px;
+ 
+}
+
+.contact img{
+    width: 50px;
+}
+.contact a{
+    text-decoration: none; /* Elimina el subrayado */
+    color: #000000;
+}
+.contact .cont_one{
+    
+    width: 50%;
+    border-right: 1px solid rgb(255, 255, 255);
+
+}
+.contact .cont_two{
+    width: 50%;
+
+}
+.contact .cont_one a:hover {
+    color: #0091E5;
+    transition: 1s, 2s;
+}
+.contact .cont_two a:hover {
+    color: #0091E5;
+    transition: 1s, 2s;
+}
